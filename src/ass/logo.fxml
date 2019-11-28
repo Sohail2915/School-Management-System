@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" fx:id="logo" minHeight="-Infinity" minWidth="-Infinity" prefHeight="469.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="ass.LogoController">
+   <children>
+      <ImageView fitHeight="218.0" fitWidth="317.0" layoutX="146.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../PIC/logo.gif" />
+         </image>
+      </ImageView>
+      <Label layoutX="46.0" layoutY="24.0" text="SMART SCHOOL MANAGEMENT SYSTEM" textFill="#fec601">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label layoutX="217.0" layoutY="64.0" prefHeight="30.0" prefWidth="179.0" text="WELCOME ADMIN" textFill="#fec601">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

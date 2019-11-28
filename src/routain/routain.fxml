@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="704.0" prefWidth="1430.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="routain.RoutainController">
+   <children>
+      <BorderPane prefHeight="704.0" prefWidth="1492.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="59.0" prefWidth="1418.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="TOP" layoutX="-1.0" layoutY="-14.0" prefHeight="73.0" prefWidth="383.0" text="CLASS,S ROUTAIN" textFill="#fec601">
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="37.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane layoutX="715.0" layoutY="21.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #fec601;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <JFXButton fx:id="Three" onAction="#ThreeAcc" prefHeight="200.0" prefWidth="200.0" text="TREE CLASS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="715.0" layoutY="247.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: pink;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <JFXButton fx:id="Eight" onAction="#EightAcc" prefHeight="200.0" prefWidth="200.0" text="NIGHT CLASS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="28.0" layoutY="245.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #F56954;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <JFXButton fx:id="Six" onAction="#SixAcc" prefHeight="200.0" prefWidth="200.0" text="SIX CLASS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="256.0" layoutY="245.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #fec601;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <JFXButton fx:id="Seven" onAction="#SevenAcc" prefHeight="200.0" prefWidth="200.0" text="SEVEN CLASS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="28.0" layoutY="21.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #fec601;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <JFXButton fx:id="PreApe" onAction="#PraApAcc" prefHeight="200.0" prefWidth="200.0" text="PRE-AP &#10;CLASS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="256.0" layoutY="21.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #00C0EF;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <JFXButton fx:id="On" onAction="#OnAcc" prefHeight="200.0" prefWidth="200.0" text="ONE CLASS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="489.0" layoutY="21.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #F56954;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <JFXButton fx:id="Two" onAction="#TwoAcc" prefHeight="200.0" prefWidth="200.0" text="TWO CLASS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="489.0" layoutY="247.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #fec601;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <JFXButton prefHeight="200.0" prefWidth="200.0" text="EIGHT CLASS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="1176.0" layoutY="21.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: pink;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <JFXButton fx:id="Five" onAction="#FiveAcc" prefHeight="200.0" prefWidth="200.0" text="FIVE CLASS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="946.0" layoutY="21.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #fec601;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <JFXButton fx:id="Four" onAction="#FourAcc" prefHeight="200.0" prefWidth="200.0" text="FOUR CLASS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <ImageView fitHeight="378.0" fitWidth="381.0" layoutX="1000.0" layoutY="248.0" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <JFXButton fx:id="TimeTable" layoutX="1000.0" layoutY="245.0" onAction="#TimeTableAcc" prefHeight="369.0" prefWidth="376.0" text="TIME TABLE">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

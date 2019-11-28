@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1410.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="STUDENT.StudentController">
+   <children>
+      <BorderPane layoutX="148.0" layoutY="147.0" prefHeight="900.0" prefWidth="1410.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="70.0" prefWidth="1321.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXTextField fx:id="SearchFiled" focusColor="WHITE" focusTraversable="false" layoutX="1115.0" layoutY="26.0" prefHeight="40.0" prefWidth="285.0" promptText=" SEARCH FILED" stylesheets="@../PIC/style.css" unFocusColor="#fec601">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label prefHeight="70.0" prefWidth="295.0" style="-fx-alignment: CENTER;" text="SUTDENTS" textFill="#fec601">
+                     <font>
+                        <Font name="System Bold" size="48.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane prefHeight="903.0" prefWidth="348.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox layoutX="38.0" layoutY="61.0" prefHeight="469.0" prefWidth="320.0">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <children>
+                        <JFXTextField fx:id="Name" focusColor="#0a0a0a" prefHeight="93.0" prefWidth="300.0" promptText="NAME" styleClass="mytext1" stylesheets="@../PIC/style.css" unFocusColor="#fec601">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="FathNam" focusColor="#0a0a0a" prefHeight="94.0" prefWidth="300.0" promptText="FATHER NAME" styleClass="mytext1" stylesheets="@../PIC/style.css" unFocusColor="#fec601">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </JFXTextField>
+                        <AnchorPane prefHeight="49.0" prefWidth="300.0">
+                           <children>
+                              <DatePicker fx:id="DatePick" layoutX="1.0" prefHeight="41.0" prefWidth="130.0" promptText="DD/MM/YY" stylesheets="@../PIC/style.css" />
+                              <Separator layoutX="147.0" orientation="VERTICAL" prefHeight="45.0" prefWidth="6.0" />
+                              <JFXComboBox fx:id="Gender" focusColor="#fec601" layoutX="165.0" layoutY="4.0" prefHeight="35.0" prefWidth="131.0" promptText="GENDER" visibleRowCount="3" />
+                           </children>
+                        </AnchorPane>
+                        <JFXTextField fx:id="ID" focusColor="#0a0a0a" prefHeight="77.0" prefWidth="300.0" promptText="ID" styleClass="mytext1" stylesheets="@../PIC/style.css" unFocusColor="#fec601">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="clas" focusColor="#0a0a0a" prefHeight="95.0" prefWidth="300.0" promptText="CLASS" styleClass="mytext1" stylesheets="@../PIC/style.css" unFocusColor="#fec601">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="PareConNumb" focusColor="#0a0a0a" prefHeight="100.0" prefWidth="300.0" promptText="PARENT CO-NO" styleClass="mytext1" stylesheets="@../PIC/style.css" unFocusColor="#fec601">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="Email" focusColor="#0a0a0a" prefHeight="82.0" prefWidth="300.0" promptText="E-MAIL" styleClass="mytext1" stylesheets="@../PIC/style.css" unFocusColor="#fec601">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </VBox>
+                  <Label alignment="CENTER" contentDisplay="TOP" layoutX="25.0" layoutY="5.0" prefHeight="34.0" prefWidth="324.0" text="ADD NEW STUDENT" textFill="#fec601">
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="29.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="ButtClear" layoutX="230.0" layoutY="539.0" onAction="#ButtClearAcc" prefHeight="29.0" prefWidth="156.0" ripplerFill="#fec601" text=" CLEAR FILED" textFill="#fec601">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="ButAdd" layoutX="23.0" layoutY="538.0" onAction="#ButAddAcc" prefHeight="33.0" prefWidth="74.0" ripplerFill="#fec601" text="ADD" textFill="#fec601">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="ButtUpdate" layoutX="121.0" layoutY="540.0" onAction="#ButtUpdateAcc" prefHeight="42.0" prefWidth="110.0" ripplerFill="#fec601" text="UP DATE" textFill="#fec601">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="Print" layoutX="125.0" layoutY="592.0" onAction="#PrintAcc" prefHeight="42.0" prefWidth="103.0" ripplerFill="#fec601" text="PRINT" textFill="#fec601">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </left>
+         <bottom>
+            <AnchorPane onKeyReleased="#ButAddAcc" prefHeight="15.0" prefWidth="1449.0" BorderPane.alignment="CENTER" />
+         </bottom>
+         <center>
+            <AnchorPane prefHeight="772.0" prefWidth="1024.0" BorderPane.alignment="CENTER">
+               <children>
+                  <BorderPane prefHeight="903.0" prefWidth="1300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <right>
+                        <AnchorPane prefHeight="903.0" prefWidth="6.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER" />
+                     </right>
+                     <center>
+                        <AnchorPane prefHeight="758.0" prefWidth="1018.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="674.0" prefWidth="1021.0" stylesheets="@../resources/scrolpan.css" AnchorPane.bottomAnchor="141.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-3.0" AnchorPane.topAnchor="0.0">
+                                 <content>
+                                    <AnchorPane prefHeight="625.0" prefWidth="1236.0">
+                                       <children>
+                                          <TableView fx:id="studenttable" minHeight="-Infinity" minWidth="-Infinity" prefHeight="674.0" prefWidth="1236.0" stylesheets="@../resources/tablestyle.css">
+                                             <columns>
+                                                <TableColumn fx:id="C1Nmae" editable="false" prefWidth="197.0" resizable="false" text="NAME" />
+                                                <TableColumn fx:id="C2FathName" editable="false" prefWidth="181.0" resizable="false" text="FATHER NAME" />
+                                                <TableColumn fx:id="CGender" editable="false" prefWidth="181.0" resizable="false" text="GENDER" />
+                                                <TableColumn fx:id="C3ID" editable="false" minWidth="7.0" prefWidth="59.0" resizable="false" text="ID" />
+                                                <TableColumn fx:id="C7Class" editable="false" minWidth="0.0" prefWidth="113.0" resizable="false" text="CLASS" />
+                                                <TableColumn fx:id="C4Email" editable="false" minWidth="0.0" prefWidth="242.0" resizable="false" text="Email" />
+                                                <TableColumn fx:id="C5ParConNum" editable="false" prefWidth="126.0" resizable="false" text="P-CON-NO" />
+                                                <TableColumn fx:id="C6DateOfBirth" editable="false" prefWidth="135.0" resizable="false" text="D-O-B" />
+                                             </columns>
+                                             <contextMenu>
+                                                <ContextMenu>
+                                                   <items>
+                                                      <MenuItem mnemonicParsing="false" onAction="#StudInformation" text="Student Information" />
+                                                      <MenuItem mnemonicParsing="false" onAction="#StudentDelete" text="Delete" />
+                                                   </items>
+                                                </ContextMenu>
+                                             </contextMenu>
+                                             <styleClass>
+                                                <String fx:value="column-header" />
+                                                <String fx:value="column-header-background" />
+                                                <String fx:value="table-cell" />
+                                                <String fx:value="table-row-cell" />
+                                                <String fx:value="table-view" />
+                                                <String fx:value="track" />
+                                                <String fx:value="virtual-flow" />
+                                                <String fx:value="vbox_style" />
+                                             </styleClass>
+                                          </TableView>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                                 <styleClass>
+                                    <String fx:value="decrement-button" />
+                                    <String fx:value="increment-button" />
+                                    <String fx:value="scroll-bar" />
+                                    <String fx:value="scroll-pane" />
+                                    <String fx:value="thumb" />
+                                    <String fx:value="track" />
+                                 </styleClass>
+                              </ScrollPane>
+                           </children>
+                        </AnchorPane>
+                     </center>
+                  </BorderPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

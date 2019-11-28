@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="704.0" prefWidth="1449.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="book.BookController">
+   <children>
+      <BorderPane layoutX="188.0" layoutY="187.0" prefHeight="1676.0" prefWidth="2427.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="36.0" prefWidth="1449.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXTextField fx:id="SearchFiled" focusColor="WHITE" focusTraversable="false" layoutX="1209.0" layoutY="30.0" prefHeight="40.0" prefWidth="236.0" promptText=" SEARCH FILED" style="-fx-background-color: white;" unFocusColor="#fec601">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label prefHeight="70.0" prefWidth="295.0" style="-fx-alignment: CENTER;" text="LIBRARY" textFill="#fec601">
+                     <font>
+                        <Font name="System Bold" size="48.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <JFXButton fx:id="Print" layoutX="1104.0" layoutY="27.0" onAction="#PrintAcc" prefHeight="42.0" prefWidth="103.0" ripplerFill="#fec601" text="PRINT" textFill="#fec601">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane prefHeight="681.0" prefWidth="396.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="TOP" layoutX="25.0" layoutY="5.0" prefHeight="53.0" prefWidth="284.0" text="ADD NEW BOOK" textFill="#fec601">
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="29.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="8.0" layoutY="8.0" prefHeight="290.0" prefWidth="381.0">
+                     <children>
+                        <JFXButton fx:id="BookClear" layoutX="293.0" layoutY="201.0" onAction="#BookClearAcc" prefHeight="30.0" prefWidth="74.0" ripplerFill="#fec601" text=" CLEAR" textFill="#fec601">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="BookAdd" layoutX="289.0" layoutY="95.0" onAction="#BookAddAcc" prefHeight="30.0" prefWidth="83.0" ripplerFill="#fec601" text="ADD" textFill="#fec601">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="BookUpdate" layoutX="287.0" layoutY="146.0" onAction="#BookUpdateAcc" prefHeight="30.0" prefWidth="87.0" ripplerFill="#fec601" text="UP DATE" textFill="#fec601">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXButton>
+                        <VBox layoutX="33.0" layoutY="55.0" prefHeight="181.0" prefWidth="254.0" style="-fx-background-color: white;">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <children>
+                              <JFXTextField fx:id="BookName" focusColor="#0a0a0a" prefHeight="45.0" prefWidth="234.0" promptText="Book Name" styleClass="mytext1" stylesheets="@../PIC/style.css" unFocusColor="#fec601">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="AuthorName" focusColor="#0a0a0a" prefHeight="58.0" prefWidth="234.0" promptText="Auther Name" styleClass="mytext1" stylesheets="@../PIC/style.css" unFocusColor="#fec601">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="BookID" focusColor="#0a0a0a" prefHeight="49.0" prefWidth="300.0" promptText="Book Id" styleClass="mytext1" stylesheets="@../PIC/style.css" unFocusColor="#fec601">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </JFXTextField>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="12.0" layoutY="344.0" prefHeight="294.0" prefWidth="358.0" style="-fx-background-color: blach;">
+                     <children>
+                        <VBox layoutX="33.0" layoutY="53.0" prefHeight="233.0" prefWidth="246.0" style="-fx-background-color: white;">
+                           <children>
+                              <JFXTextField fx:id="PersonName" focusColor="#0a0a0a" prefHeight="51.0" prefWidth="233.0" promptText="Person Name" styleClass="mytext1" stylesheets="@../PIC/style.css" unFocusColor="#fec601">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="PersonID" focusColor="#0a0a0a" prefHeight="49.0" prefWidth="300.0" promptText="Person Id" styleClass="mytext1" stylesheets="@../PIC/style.css" unFocusColor="#fec601">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="IssuDays" focusColor="#0a0a0a" prefHeight="54.0" prefWidth="300.0" promptText="DAYS" styleClass="mytext1" stylesheets="@../PIC/style.css" unFocusColor="#fec601">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </JFXTextField>
+                              <DatePicker fx:id="IssuDate" prefHeight="36.0" prefWidth="212.0" promptText="Issu Date" style="-fx-background-color: #FEC601;" />
+                              <DatePicker fx:id="IssuReturn" prefHeight="36.0" prefWidth="212.0" promptText="Return Date" style="-fx-background-color: #FEC601;" />
+                           </children>
+                        </VBox>
+                        <JFXButton fx:id="IssuClearButt" layoutX="291.0" layoutY="190.0" onAction="#IssuClearButtAcc" prefHeight="30.0" prefWidth="74.0" ripplerFill="#fec601" text=" CLEAR" textFill="#fec601">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="IssuButt" layoutX="287.0" layoutY="84.0" onAction="#IssuButtAcc" prefHeight="30.0" prefWidth="83.0" ripplerFill="#fec601" text="ISSU" textFill="#fec601">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="IssuExtendButt" layoutX="285.0" layoutY="135.0" onAction="#IssuExtendButtAcc" prefHeight="30.0" prefWidth="87.0" ripplerFill="#fec601" text="EXTEND" textFill="#fec601">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXButton>
+                        <Label layoutX="69.0" layoutY="3.0" text="BOOK ISSUE" textFill="#fec601">
+                           <font>
+                              <Font name="System Bold" size="29.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <AnchorPane prefHeight="652.0" prefWidth="1276.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ScrollPane prefHeight="652.0" prefWidth="1060.0" style="-fx-background-color: #FEC601; -fx-border-color: #FEC601;" stylesheets="@../resources/scrolpan.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-7.0" AnchorPane.topAnchor="0.0">
+                     <content>
+                        <TableView fx:id="booktable" prefHeight="652.0" prefWidth="1049.0" stylesheets="@../resources/tablestyle.css">
+                           <columns>
+                              <TableColumn fx:id="Cbookname" editable="false" minWidth="7.0" prefWidth="154.0" resizable="false" text="BOOK NAME" />
+                              <TableColumn fx:id="Cauthorname" editable="false" prefWidth="153.0" resizable="false" text="AUTHOR NAME" />
+                              <TableColumn fx:id="CbookID" editable="false" prefWidth="74.0" resizable="false" text="BOOK ID" />
+                              <TableColumn fx:id="Cpersonname" editable="false" prefWidth="201.0" resizable="false" text="PERSON NAME" />
+                              <TableColumn fx:id="CissuID" editable="false" minWidth="1.0" prefWidth="105.0" resizable="false" text="ISSU ID" />
+                              <TableColumn fx:id="Cdays" editable="false" prefWidth="56.0" resizable="false" text="DAY,S" />
+                              <TableColumn fx:id="CissuDate" editable="false" minWidth="0.0" prefWidth="155.0" resizable="false" text="ISSU DATE" />
+                              <TableColumn fx:id="Creturndate" editable="false" minWidth="0.0" prefWidth="142.0" resizable="false" text="RETURN DATE" />
+                           </columns>
+                           <contextMenu>
+                              <ContextMenu>
+                                 <items>
+                                    <MenuItem fx:id="ReturnProcess" mnemonicParsing="false" onAction="#ReturnProcessAcc" text="ReturnProcess" />
+                                    <MenuItem fx:id="BookDelet" mnemonicParsing="false" onAction="#BookDeletAcc" text="Book-Delete-All-Information" />
+                                 </items>
+                              </ContextMenu>
+                           </contextMenu>
+                           <styleClass>
+                              <String fx:value="column-header" />
+                              <String fx:value="column-header-background" />
+                              <String fx:value="table-cell" />
+                              <String fx:value="table-row-cell" />
+                              <String fx:value="table-view" />
+                           </styleClass>
+                        </TableView>
+                     </content>
+                     <styleClass>
+                        <String fx:value="decrement-button" />
+                        <String fx:value="increment-button" />
+                        <String fx:value="scroll-bar" />
+                        <String fx:value="scroll-pane" />
+                        <String fx:value="thumb" />
+                        <String fx:value="track" />
+                     </styleClass>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+         </center>
+         <bottom>
+            <AnchorPane onKeyReleased="#ButAddAcc" prefHeight="15.0" prefWidth="1449.0" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

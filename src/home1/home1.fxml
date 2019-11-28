@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="900.0" maxWidth="1580.0" minHeight="500.0" minWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home1.Home1Controller">
+   <children>
+      <BorderPane layoutX="-133.0" layoutY="-61.0" maxHeight="1.7976931348623157E308" prefHeight="750.0" prefWidth="1580.0" style="-fx-background-position: center;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <AnchorPane prefHeight="830.0" prefWidth="168.0" style="-fx-background-color: #042955;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="-1.0" layoutY="-3.0" prefHeight="58.0" prefWidth="167.0" style="-fx-background-color: #FEC601; -fx-alignment: center;" text="SSMS" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="36.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutY="53.0" prefHeight="777.0" prefWidth="173.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-5.0" AnchorPane.topAnchor="53.0">
+                     <children>
+                        <VBox prefHeight="777.0" prefWidth="168.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <JFXButton fx:id="ButtStud" alignment="TOP_LEFT" onAction="#ButtStudAcc" prefHeight="52.0" prefWidth="153.0" style="-fx-border-image-insets: left;" text="Students" textFill="WHITE">
+                                 <font>
+                                    <Font name="Candara Bold" size="17.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="29.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../PIC/User_24px.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <ripplerFill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop color="BLACK" />
+                                          <Stop color="WHITE" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </ripplerFill>
+                              </JFXButton>
+                              <JFXButton fx:id="ButtTeach" alignment="TOP_LEFT" onAction="#ButtTeachAcc" prefHeight="52.0" prefWidth="153.0" style="-fx-border-image-insets: left;" text="Teachers" textFill="WHITE">
+                                 <font>
+                                    <Font name="Candara Bold" size="17.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="29.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../PIC/teacher.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <ripplerFill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop color="BLACK" />
+                                          <Stop color="WHITE" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </ripplerFill>
+                              </JFXButton>
+                              <JFXButton fx:id="ButtEmpl" alignment="TOP_LEFT" onAction="#ButtEmplAcc" prefHeight="52.0" prefWidth="153.0" style="-fx-border-image-insets: left;" text="Employ" textFill="WHITE">
+                                 <font>
+                                    <Font name="Candara Bold" size="17.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="29.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../PIC/Staff_24px.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <ripplerFill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop color="BLACK" />
+                                          <Stop color="WHITE" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </ripplerFill>
+                              </JFXButton>
+                              <JFXButton fx:id="ButtLibr" alignment="TOP_LEFT" onAction="#ButtLibrAcc" prefHeight="52.0" prefWidth="153.0" style="-fx-border-image-insets: left;" text="Library" textFill="WHITE">
+                                 <font>
+                                    <Font name="Candara Bold" size="17.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="29.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../PIC/Library_24px.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <ripplerFill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop color="BLACK" />
+                                          <Stop color="WHITE" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </ripplerFill>
+                              </JFXButton>
+                              <JFXButton fx:id="ButtSubj" alignment="TOP_LEFT" onAction="#ButtSubjAcc" prefHeight="52.0" prefWidth="153.0" style="-fx-background-image: left;" text="Subjects" textFill="WHITE">
+                                 <font>
+                                    <Font name="Candara Bold" size="17.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="29.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../PIC/User_24px.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <ripplerFill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop color="BLACK" />
+                                          <Stop color="WHITE" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </ripplerFill>
+                              </JFXButton>
+                              <JFXButton fx:id="ButtTrans" alignment="TOP_LEFT" onAction="#ButtTransAcc" prefHeight="52.0" prefWidth="153.0" style="-fx-border-image-insets: left;" text="Transport" textFill="WHITE">
+                                 <font>
+                                    <Font name="Candara Bold" size="17.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="29.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../PIC/Transportation_24px.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <ripplerFill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop color="BLACK" />
+                                          <Stop color="WHITE" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </ripplerFill>
+                              </JFXButton>
+                              <JFXButton fx:id="ButtHostel" alignment="TOP_LEFT" onAction="#ButtHostelAcc" prefHeight="52.0" prefWidth="153.0" style="-fx-border-image-insets: left;" text="Hostel" textFill="WHITE">
+                                 <font>
+                                    <Font name="Candara Bold" size="17.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="29.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../PIC/hotal.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <ripplerFill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop color="BLACK" />
+                                          <Stop color="WHITE" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </ripplerFill>
+                              </JFXButton>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </AnchorPane>
+         </left>
+         <center>
+            <AnchorPane prefHeight="821.0" prefWidth="1412.0" BorderPane.alignment="CENTER">
+               <children>
+                  <BorderPane prefHeight="750.0" prefWidth="1412.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <center>
+                        <AnchorPane fx:id="ClockPan" prefHeight="731.0" prefWidth="1410.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <BorderPane layoutX="-14.0" layoutY="58.0" prefHeight="692.0" prefWidth="1412.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <center>
+                                    <AnchorPane fx:id="holderpan" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="900.0" prefWidth="1410.0" BorderPane.alignment="CENTER" />
+                                 </center>
+                              </BorderPane>
+                           </children>
+                        </AnchorPane>
+                     </center>
+                     <top>
+                        <AnchorPane prefHeight="58.0" prefWidth="1394.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Label layoutX="122.0" layoutY="12.0" prefHeight="29.0" prefWidth="372.0" text="SMART SCHOOL MANAGEMENT SYSTEM" textFill="#fec601">
+                                 <font>
+                                    <Font name="System Bold Italic" size="19.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </Label>
+                              <ImageView fitHeight="38.0" fitWidth="46.0" layoutX="17.0" layoutY="7.0" nodeOrientation="INHERIT" smooth="false">
+                                 <image>
+                                    <Image url="@../PIC/icons8_Graduation_Cap_24px_1.png" />
+                                 </image>
+                              </ImageView>
+                              <JFXButton fx:id="ButtHome" layoutX="1321.0" onAction="#ButtHomeAcc" prefHeight="58.0" prefWidth="89.0" ripplerFill="WHITE" style="-fx-background-color: #FEC601;" text="HOME" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </JFXButton>
+                              <Separator layoutX="87.0" orientation="VERTICAL" prefHeight="54.0" prefWidth="0.0" />
+                           </children>
+                        </AnchorPane>
+                     </top>
+                  </BorderPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

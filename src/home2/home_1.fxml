@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="751.0" prefWidth="1410.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home2.HomeController">
+   <children>
+      <BorderPane prefHeight="751.0" prefWidth="1410.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <AnchorPane prefHeight="663.0" prefWidth="122.0" BorderPane.alignment="CENTER" />
+         </left>
+         <top>
+            <AnchorPane prefHeight="68.0" prefWidth="1434.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="TOP" layoutX="297.0" prefHeight="80.0" prefWidth="786.0" text="WELCOME TO SSMS HOME PAGE" textFill="#fec601">
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="48.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane prefHeight="33.0" prefWidth="1449.0" BorderPane.alignment="CENTER" />
+         </bottom>
+         <right>
+            <AnchorPane prefHeight="663.0" prefWidth="195.0" BorderPane.alignment="CENTER" />
+         </right>
+         <center>
+            <AnchorPane prefHeight="691.0" prefWidth="1361.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="664.0" fitWidth="1403.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../PIC/home2.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="6.0" prefHeight="118.0" prefWidth="462.0" text="Success in managment  requires &#10;learning as fast as the WORLD is changing..... " textFill="WHITE">
+                     <font>
+                        <Font name="System Italic" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="26.0" layoutY="623.0" prefHeight="38.0" prefWidth="240.0" text="KAMRAN &amp; SOHAIL" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

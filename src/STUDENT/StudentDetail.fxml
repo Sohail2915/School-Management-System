@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import java.lang.String?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="765.0" prefWidth="813.0" style="-fx-background-color: #042955;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="STUDENT.StudentDetailController">
+   <children>
+      <BorderPane layoutX="219.0" layoutY="142.0" prefHeight="744.0" prefWidth="899.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="72.0" prefWidth="813.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="335.0" layoutY="14.0" prefHeight="104.0" prefWidth="813.0" style="-fx-alignment: center;" text="STUDENT DETAIL" textFill="#fec601" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="System Bold" size="50.0" />
+                     </font>
+                     <graphic>
+                        <Label text="SSMS" textFill="#fec601">
+                           <font>
+                              <Font name="System Bold" size="21.0" />
+                           </font>
+                        </Label>
+                     </graphic>
+                  </Label>
+                  <MaterialDesignIconView fx:id="close" fill="WHITE" glyphName="CLOSE" layoutX="1191.0" layoutY="32.0" onDragDetected="#close" onMouseClicked="#closeStage" size="30.0" />
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane prefHeight="22.0" prefWidth="813.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton fx:id="Print" layoutX="715.0" layoutY="19.0" onAction="#PrintAcc" prefHeight="31.0" prefWidth="87.0" ripplerFill="#fec601" text="PRINT" textFill="#fec601">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </bottom>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane layoutY="47.0" prefHeight="138.0" prefWidth="1236.0">
+                     <children>
+                        <TableView fx:id="studenttable" minHeight="-Infinity" minWidth="-Infinity" prefHeight="138.0" prefWidth="1236.0" stylesheets="@../resources/tablestyle.css">
+                           <columns>
+                              <TableColumn fx:id="C1Nmae" editable="false" prefWidth="197.0" resizable="false" text="NAME" />
+                              <TableColumn fx:id="C2FathName" editable="false" prefWidth="181.0" resizable="false" text="FATHER NAME" />
+                              <TableColumn fx:id="CGender" editable="false" prefWidth="181.0" resizable="false" text="GENDER" />
+                              <TableColumn fx:id="C3ID" editable="false" minWidth="7.0" prefWidth="59.0" resizable="false" text="ID" />
+                              <TableColumn fx:id="C7Class" editable="false" minWidth="0.0" prefWidth="113.0" resizable="false" text="CLASS" />
+                              <TableColumn fx:id="C4Email" editable="false" minWidth="0.0" prefWidth="242.0" resizable="false" text="Email" />
+                              <TableColumn fx:id="C5ParConNum" editable="false" prefWidth="126.0" resizable="false" text="P-CON-NO" />
+                              <TableColumn fx:id="C6DateOfBirth" editable="false" prefWidth="135.0" resizable="false" text="D-O-B" />
+                           </columns>
+                           <contextMenu>
+                              <ContextMenu />
+                           </contextMenu>
+                           <styleClass>
+                              <String fx:value="column-header" />
+                              <String fx:value="column-header-background" />
+                              <String fx:value="table-cell" />
+                              <String fx:value="table-row-cell" />
+                              <String fx:value="table-view" />
+                              <String fx:value="track" />
+                              <String fx:value="virtual-flow" />
+                              <String fx:value="vbox_style" />
+                           </styleClass>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+                  <Label layoutY="4.0" text="STUDENT DETAIL" textFill="#fec601">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="19.0" layoutY="232.0" prefHeight="31.0" prefWidth="73.0" text="NAME:" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="21.0" layoutY="543.0" prefHeight="31.0" prefWidth="73.0" text="D-O-B:" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="466.0" prefHeight="31.0" prefWidth="73.0" text="EMAIL:" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="21.0" layoutY="504.0" prefHeight="31.0" prefWidth="115.0" text="P-CON-NO:" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="422.0" prefHeight="31.0" prefWidth="73.0" text="CLASS:" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="377.0" prefHeight="31.0" prefWidth="73.0" text="ID:" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="328.0" prefHeight="31.0" prefWidth="91.0" text="GENDER:" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="17.0" layoutY="284.0" prefHeight="31.0" prefWidth="152.0" text="FATHER NAME:" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="187.0" layoutY="214.0" prefHeight="356.0" prefWidth="284.0">
+                     <children>
+                        <VBox layoutX="-1.0" prefHeight="356.0" prefWidth="284.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <JFXTextField fx:id="Name" editable="false" focusColor="BLACK" prefHeight="41.0" prefWidth="284.0" styleClass="mytext" stylesheets="@../PIC/style.css" unFocusColor="#fec601">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="Fname" editable="false" focusColor="BLACK" prefHeight="53.0" prefWidth="284.0" styleClass="mytext" stylesheets="@../PIC/style.css" unFocusColor="#fec601">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="Gender" editable="false" focusColor="BLACK" prefHeight="48.0" prefWidth="284.0" styleClass="mytext" stylesheets="@../PIC/style.css" unFocusColor="#fec601">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="ID" editable="false" focusColor="BLACK" prefHeight="50.0" prefWidth="284.0" styleClass="mytext" stylesheets="@../PIC/style.css" unFocusColor="#fec601">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="Class" editable="false" focusColor="BLACK" prefHeight="44.0" prefWidth="284.0" styleClass="mytext" stylesheets="@../PIC/style.css" unFocusColor="#fec601">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="Email" editable="false" focusColor="BLACK" prefHeight="49.0" prefWidth="284.0" styleClass="mytext" stylesheets="@../PIC/style.css" unFocusColor="#fec601">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="Pcon" editable="false" focusColor="BLACK" prefHeight="18.0" prefWidth="203.0" styleClass="mytext" stylesheets="@../PIC/style.css" unFocusColor="#fec601">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="DOB" editable="false" focusColor="BLACK" prefHeight="42.0" prefWidth="284.0" styleClass="mytext" stylesheets="@../PIC/style.css" unFocusColor="#fec601">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </JFXTextField>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

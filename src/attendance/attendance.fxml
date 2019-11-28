@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="715.0" prefWidth="1440.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="attendance.AttendanceController">
+   <children>
+      <BorderPane layoutX="124.0" layoutY="94.0" prefHeight="715.0" prefWidth="1440.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="33.0" prefWidth="1440.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutY="-1.0" text="ALL ATTENDANCE " textFill="#fec601">
+                     <font>
+                        <Font name="System Bold" size="37.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane fx:id="holderpan" prefHeight="662.0" prefWidth="1244.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <effect>
+                  <DropShadow height="23.72" radius="24.7625" width="77.33" />
+               </effect>
+            </AnchorPane>
+         </center>
+         <right>
+            <AnchorPane prefHeight="662.0" prefWidth="131.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox prefHeight="319.0" prefWidth="130.0">
+                     <children>
+                        <JFXButton fx:id="student" onAction="#studentAcc" prefHeight="119.0" prefWidth="217.0" ripplerFill="#fec601" text="STUDENT &#10;Attendance" textFill="#fec601">
+                           <font>
+                              <Font name="System Bold" size="19.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="Teacher" onAction="#TeacherButt" prefHeight="113.0" prefWidth="217.0" ripplerFill="#fec601" text="TEACHER&#10;Attendance" textFill="#fec601">
+                           <font>
+                              <Font name="System Bold" size="19.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="Employ" onAction="#EmployButt" prefHeight="107.0" prefWidth="217.0" ripplerFill="#fec601" text="EMPLOY &#10;Attendance" textFill="#fec601">
+                           <font>
+                              <Font name="System Bold" size="19.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </right>
+         <left>
+            <AnchorPane prefHeight="662.0" prefWidth="64.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER" />
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1410.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TEACHER.TEACHERController">
+   <children>
+      <BorderPane layoutX="158.0" layoutY="157.0" prefHeight="900.0" prefWidth="1410.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="36.0" prefWidth="1449.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXTextField fx:id="SearchFiled" focusColor="WHITE" focusTraversable="false" layoutX="1148.0" layoutY="28.0" prefHeight="40.0" prefWidth="254.0" promptText=" SEARCH FILED" style="-fx-background-color: white;" unFocusColor="#fec601">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label prefHeight="70.0" prefWidth="254.0" style="-fx-alignment: CENTER;" text="TEACHER" textFill="#fec601">
+                     <font>
+                        <Font name="System Bold" size="48.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane prefHeight="681.0" prefWidth="396.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox layoutX="38.0" layoutY="61.0" prefHeight="469.0" prefWidth="320.0">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <children>
+                        <JFXTextField fx:id="Name" focusColor="#0a0a0a" prefHeight="45.0" prefWidth="300.0" promptText="Name" styleClass="mytext1" stylesheets="@../PIC/style.css" unFocusColor="#fec601">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="FathNam" focusColor="#0a0a0a" prefHeight="54.0" prefWidth="300.0" promptText="Father Name" styleClass="mytext1" stylesheets="@../PIC/style.css" unFocusColor="#fec601">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="ID" focusColor="#0a0a0a" prefHeight="49.0" prefWidth="300.0" promptText="Id" styleClass="mytext1" stylesheets="@../PIC/style.css" unFocusColor="#fec601">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="EduFile" focusColor="BLACK" prefHeight="49.0" prefWidth="300.0" promptText="EDUCATION" styleClass="mytext1" stylesheets="@../PIC/style.css" unFocusColor="#fec601">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="ExperFiled" focusColor="#0a0a0a" prefHeight="51.0" prefWidth="300.0" promptText="Experiance" styleClass="mytext1" stylesheets="@../PIC/style.css" unFocusColor="#fec601">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="ConFiled" focusColor="#0a0a0a" prefHeight="51.0" prefWidth="300.0" promptText="Contact No" styleClass="mytext1" stylesheets="@../PIC/style.css" unFocusColor="#fec601">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="SubAssFiled" focusColor="BLACK" prefHeight="53.0" prefWidth="300.0" promptText="Subjects Assign" styleClass="mytext1" stylesheets="@../PIC/style.css" unFocusColor="#fec601">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="WeekLec" focusColor="BLACK" prefHeight="45.0" prefWidth="300.0" promptText="Week-Lectures" styleClass="mytext1" stylesheets="@../PIC/style.css" unFocusColor="#fec601">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="Email" focusColor="#0a0a0a" prefHeight="50.0" prefWidth="300.0" promptText="E-MAIL" styleClass="mytext1" stylesheets="@../PIC/style.css" unFocusColor="#fec601">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </JFXTextField>
+                        <DatePicker fx:id="DatePick" prefHeight="36.0" prefWidth="212.0" promptText="DD/MM/YY" style="-fx-background-color: #FEC601;" />
+                     </children>
+                  </VBox>
+                  <Label alignment="CENTER" contentDisplay="TOP" layoutX="25.0" layoutY="5.0" prefHeight="34.0" prefWidth="324.0" text="ADD NEW TEACHER" textFill="#fec601">
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="29.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="ButtClear" layoutX="36.0" layoutY="574.0" onAction="#ButtClearAcc" prefHeight="45.0" prefWidth="145.0" ripplerFill="#fec601" text=" CLEAR FILED" textFill="#fec601">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="ButAdd" layoutX="23.0" layoutY="530.0" onAction="#ButAddAcc" prefHeight="42.0" prefWidth="112.0" ripplerFill="#fec601" text="ADD" textFill="#fec601">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="ButtUpdate" layoutX="211.0" layoutY="530.0" onAction="#ButtUpdateAcc" prefHeight="28.0" prefWidth="112.0" ripplerFill="#fec601" text="UP DATE" textFill="#fec601">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="PRINT" layoutX="211.0" layoutY="574.0" onAction="#printAcc" prefHeight="45.0" prefWidth="92.0" ripplerFill="#fec601" text="PRINT" textFill="#fec601">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </left>
+         <bottom>
+            <AnchorPane onKeyReleased="#ButAddAcc" prefHeight="15.0" prefWidth="1449.0" BorderPane.alignment="CENTER" />
+         </bottom>
+         <center>
+            <Pane fx:id="PrintPan" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ScrollPane prefHeight="574.0" prefWidth="1014.0" style="-fx-background-color: #FEC601; -fx-border-color: #FEC601;" stylesheets="@../resources/scrolpan.css">
+                     <content>
+                        <TableView fx:id="teachertable" minHeight="-Infinity" minWidth="-Infinity" prefHeight="559.0" prefWidth="1250.0" stylesheets="@../resources/tablestyle.css">
+                           <columns>
+                              <TableColumn fx:id="C3ID" editable="false" minWidth="7.0" prefWidth="56.0" resizable="false" text="ID" />
+                              <TableColumn fx:id="C1Nmae" editable="false" prefWidth="195.0" resizable="false" text="NAME" />
+                              <TableColumn fx:id="C2FathName" editable="false" prefWidth="154.0" resizable="false" text="FATHER NAME" />
+                              <TableColumn fx:id="C8edu" editable="false" prefWidth="74.0" resizable="false" text="EDUC" />
+                              <TableColumn fx:id="C9expe" editable="false" prefWidth="98.0" resizable="false" text="EXPE" />
+                              <TableColumn fx:id="C10subAss" editable="false" prefWidth="140.0" resizable="false" text="SUB-ASSIG" />
+                              <TableColumn fx:id="C7CWeekLec" editable="false" minWidth="0.0" prefWidth="87.0" resizable="false" text="WEEK-T-LEC" />
+                              <TableColumn fx:id="C5ConNum" editable="false" minWidth="0.0" prefWidth="143.0" resizable="false" text="CON-NO" />
+                              <TableColumn fx:id="C6DateOfBirth" editable="false" minWidth="0.0" prefWidth="154.0" resizable="false" text="D-O-B" />
+                              <TableColumn fx:id="C4Email" editable="false" minWidth="0.0" prefWidth="147.0" resizable="false" text="Email" />
+                           </columns>
+                           <contextMenu>
+                              <ContextMenu>
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" onAction="#StudInformation" text="Student Information" />
+                                    <MenuItem mnemonicParsing="false" onAction="#StudentDelete" text="Delete" />
+                                 </items>
+                              </ContextMenu>
+                           </contextMenu>
+                           <styleClass>
+                              <String fx:value="column-header" />
+                              <String fx:value="column-header-background" />
+                              <String fx:value="decrement-button" />
+                              <String fx:value="increment-button" />
+                              <String fx:value="label" />
+                              <String fx:value="root" />
+                              <String fx:value="table-cell" />
+                              <String fx:value="table-row-cell" />
+                              <String fx:value="table-view" />
+                              <String fx:value="text" />
+                              <String fx:value="thumb" />
+                              <String fx:value="track" />
+                              <String fx:value="vbox" />
+                           </styleClass>
+                        </TableView>
+                     </content>
+                     <styleClass>
+                        <String fx:value="decrement-button" />
+                        <String fx:value="increment-button" />
+                        <String fx:value="scroll-bar" />
+                        <String fx:value="scroll-pane" />
+                        <String fx:value="thumb" />
+                        <String fx:value="track" />
+                     </styleClass>
+                  </ScrollPane>
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
